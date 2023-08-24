@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+
+  <link href="{{url_for('static', filename='css/stylmenu.css')}}" media="screen" type="text/css" rel="stylesheet">
+  <link href="{{url_for('static', filename='css/style.css')}}" media="screen" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for('static', filename='dist/stylesheets/superslides.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='dist/stylesheets/superslides.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='build/bootstrap/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='build/bootstrap/css/bootstrap.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='build/bootstrap/js/bootstrap.bundle.min.js')}}">
+
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/animate/animate.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/select2/select2.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/util.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+
+  <title>Identifikasi Jenis Beras</title>
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("menu").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("menu").style.height = "0%";
+}
+</script>
+  <script src="{{url_for('static', filename='javascripts/jquery-1.11.1.min.js')}}"></script>
+<script src="{{url_for('static', filename='javascripts/jquery.easing.1.3.js')}}"></script>
+
+<script src="{{url_for('static', filename='javascripts/jquery.animate-enhanced.min.js')}}"></script>
+<script src="{{url_for('static', filename='dist/jquery.superslides.js')}}" type="text/javascript" charset="utf-8"></script>
+        
+<script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+  <script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true,
+      scrollable: true,
+        play: 7000
+      });
+
+      $('#slides').on('mouseenter', function() {
+        $(this).superslides('stop');
+        console.log('Stopped')
+      });
+      $('#slides').on('mouseleave', function() {
+        $(this).superslides('start');
+        console.log('Started')
+      });
+    });
+  </script>
+  <style type="text/css">
+html,body{
+    font-family: century gothic;
+    line-height: 1.42857143;
+    font-size: 18px;
+    }
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.h2, h2{
+  font-size: 35px;  
+}
+    
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+c{
+  color: orange;
+}
+  .split-text-1 p {
+    font-family: century gothic;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+    margin-left: 200px;
+    margin-right: 40px;
+    display: inline-block;
+    text-align: right;
+    margin-top: 0px;
+}
+
+hr{
+  margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.background-wrap {
+    position: relative;;
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+.bg{
+    position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.content {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index:1;
+    background-color: rgba(0,0,0,0.5);
+    text-align: right;
+
+}
+input[type="file"] {
+  display: block;
+}
+.imageThumb {
+  height: 505px;
+  border: 2px solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.remove {
+  display: block;
+  background: #444;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+      .riv{
+        text-align:center;
+        padding:3%;
+        border:thin solid black;
+        overflow: hidden;
+      }
+
+      input{
+        display: none;
+      }
+      label{
+        cursor:pointer;
+      }
+      #imageName{
+        color:green;
+      }
+  </style>
+
+</head>
+<body>
+<header style="border-bottom: 2px solid #e0e0e0;background: #fff; height: 80px;">
+    <div class="menu">
+      <div class="logo"><a href="#home"><img style="height: 40px;width: 40px; display: none;" src="{{url_for('static', filename='logo5.png')}}"></div></a>
+      <a href="#home"><img style="height: 40px;width: 40px;" src="{{url_for('static', filename='logo5.png')}}">IJ-Beras</a>
+      <a href="#konten1">tentang</a>
+      <a href="#konten2">identifikasi</a>
+    </div>
+</header>
+
+
+<div class="background-wrap" id="home">
+  <div class="bg"><img style="height: 100%;width: 100%;" src="{{url_for('static', filename='images/bg8.jpg')}}"></div>>       
+  <div class="content">
+    <div class="text-1" style="text-align: center; position: relative; margin: 0 auto; float: none; width: 100%; height: 100%;">
+          <h1 style=" color: white;font-size: 75px; text-align: center; font-weight: normal; margin-top: 100px;">Identifikasi Jenis Beras</h1><br><br>
+          <p style="text-align: center;color: #DCDCDC; font-size: 30px; font-weight: normal; margin-bottom: 140px;">IDENTIFIKASI <c>BERBAGAI</c> JENIS <c>BERAS</c></p>
+          <br><br>
+          <a class="border" style="border: 3px solid orange!important; font-size: 15px; font-weight: normal;" href="#konten2">Mulai</a>
+    </div>         
+  </div> 
+</div>
+
+  <div class="bg-light" id="konten1">
+  <div class="container py-3">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-11">
+        <h1 class="display-4" style="font-size: 2.7rem;">Tentang</h1>
+        <hr  align="left" style="border-top: 1px solid #d89156; border-top-width: 5px;" width="100px">
+       <i> <p class="lead text-muted mb-0" style="font-size: 1.1rem;">Beras adalah salah satu produk makanan pokok paling penting di dunia, terutama berlaku di Indonesia. Beras merupakan butir padi yang sudah dipisahkan dari sekam. Banyaknya jenis dan level kualitas beras memerlukan database dan identifikasi yang tepat serta konsisten dalam mengklasifikasikannya.</p><br>
+        <p class="lead text-muted mb-0" style="font-size: 1.1rem;">Dengan adanya teknologi yang dapat mengetahui atau mengklasifikasi jenis beras, maka masyarakat dengan mudah dapat mengetahui jenis dan kualitas beras yang akan dikonsumsi. Menentukan jenis beras secara manual terkadang mendapatkan hasil yang kualitas atau jenis beras yang salah. Dengan adanya fitur ini masyarakat hanya dapat menginput gambar beras untuk dapat mengetahui jenis beras.</p></i>
+      </div>
+      <!-- <div class="col-lg-6 d-none d-lg-block"><img src="{{url_for('static', filename='images/logo.png')}}" alt="" class="img-fluid"></div> -->
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-5" id="konten2">
+  <div class="container py-3" >
+     <div class="text-center">
+          <h1>Identifikasi</h1>
+          <hr style="border-top: 1px solid #d89156; border-top-width: 5px; text-align: center; display: inline-block;" width="80px">
+          <br><br>
+        </div>
+    <div class="row align-items-center ">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary" style="color: #d89156!important;"></i>
+        <h2 class="font-weight-light">Identifikasi Jenis Beras</h2>
+        <div class="riv ">
+          <form method="post" action="/" enctype="multipart/form-data">
+              <dl>
+              <p>
+                <input type="file" name="file" autocomplete="off" required>
+              </p>
+              </dl>
+              <button type="submit" value="Submit">Input</button>
+              
+            </p>
+
+          </form>
+    </div>
+
+      </div>
+      
+    </div>
+    <br>
+      <br>
+    {% if filename %}
+    <div class="card" style="width: 50rem;">
+      <center><img src="{{ url_for('display_image', filename=filename) }}" width="150px"></center>
+      <div class="card-body">
+        <h1>{{prediksi}}</h1>
+        <p class="card-text"> {{penjelasan}} </p>
+        <ul>
+          <li>1. {{ket1}}</li>
+          <li>2. {{ket2}}</li>
+          <li>3. {{ket3}}</li>
+          <li>4. {{ket4}}</li>
+          {% if ket5 %}
+          <li>5. {{ket5}}</li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+
+    {% endif %}
+  </div>
+</div>
+
+</body>
+</html>
